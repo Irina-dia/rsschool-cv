@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000000;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, #f0fbff, #b1d5f5);
+}
+
+.header-menu__list {
+    display: flex;
+    align-items: center;
+    gap: 20px 30px;
+    padding: 20px 0; 
+    font-weight: 700;
+    list-style-type: none; 
+}
+
+.header-menu__link,
+.github-link {    
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-menu__link:hover,
+.github-link:hover {
+    color: #6a50d2;
+}
+
+.main {
+    margin: 60px auto;
+}
+
+.section {
+    padding: 0 0 30px;    
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+}
+
+.row_developer-info {
+    align-items: center;
+}
+
+.column_left {
+    width: 35%;
+    padding: 0 50px;
+    background: #f3f3f3;
+    border-right: 2px dotted #b1d5f5;
+}
+
+.column_right {
+    width: 65%;
+}
+
+.title {    
+    font-family: "Baskervville SC", serif;
+    font-style: normal;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000000;
+}
+
+.title_first-type {
+    max-width: 400px;
+    margin-bottom: 5px;
+    font-size: 48px;
+    color: #3a6f9f;
+    border-bottom: 2px dotted #b1d5f5;
+}
+
+.title_third-type {
+    font-size: 24px;
+}
+
+.title_second-type {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-size: 32px;
+    color: #3a6f9f;
+    border-top: 2px dotted #b1d5f5;
+}
+
+.column_left .title_second-type {
+    text-align: center;
+}
+
+.developer-img__wrapper {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    margin: 50px auto;
+    border: 2px dotted #b1d5f5;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.developer-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;     
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.list__link {    
+    color: #3a6f9f;
+    text-decoration: none;
+}
+
+.list__link:hover {
+    color: #6a50d2;
+}
+
+.code__text {
+    padding: 20px;
+    background: #f0fbff;
+    border-radius: 10px;
+}
+
+.footer {
+    background: linear-gradient(135deg, #f0fbff, #b1d5f5);
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.github-link,
+.year {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rs-school-link {
+    display: block;
+    width: 80px;
+}
+
+.rs-school-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .main {
+        background: #f3f3f3;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .row_developer-info {
+        gap: 0;
+        margin: 0 0 50px;
+    }
+
+    .column_left,
+    .column_right {
+        width: 100%;
+        padding: 0 50px;
+        background: #f3f3f3;
+        border-right: 0;
+    }
+
+    .header-menu__list {
+        flex-wrap: wrap;
+    }
+
+    .title {
+        text-align: center;
+    }    
+
+    .title_first-type {
+        margin: 0 auto 5px;
+    }
+}
